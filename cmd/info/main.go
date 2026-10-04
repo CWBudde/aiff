@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-audio/aiff"
+	"github.com/cwbudde/aiff"
 )
 
 var (

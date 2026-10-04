@@ -1,8 +1,9 @@
-module github.com/go-audio/aiff
+module github.com/cwbudde/aiff
 
-go 1.13
+go 1.23
 
-require (
-	github.com/go-audio/audio v1.0.0
-	github.com/go-audio/wav v1.0.0
-)
+require github.com/go-audio/audio v1.0.0
+
+require github.com/cwbudde/wav v0.1.3
+
+require github.com/go-audio/riff v1.0.0 // indirect

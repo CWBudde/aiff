@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-audio/aiff"
+	"github.com/cwbudde/aiff"
+	"github.com/cwbudde/wav"
 	"github.com/go-audio/audio"
-	"github.com/go-audio/wav"
 )
 
 var (
@@ -80,7 +80,7 @@ func main() {
 		if n != len(buf.Data) {
 			buf.Data = buf.Data[:n]
 		}
-		if err := e.Write(buf); err != nil {
+		if err := e.WriteInt(buf); err != nil {
 			panic(err)
 		}
 	}
